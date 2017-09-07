@@ -14,7 +14,7 @@ pacman -S --noconfirm vim sed git
 sed -i "s/^#[ \t]%sudo[ \t]ALL=(ALL)[ \t]ALL$/%sudo ALL=(ALL) ALL/g" /etc/sudoers
 sed -i "s/^#[ \t]%wheel[ \t]ALL=(ALL)[ \t]NOPASSWD:[ \t]ALL$/%wheel ALL=(ALL) NOPASSWD: ALL/g" /etc/sudoers
 groupadd sudo
-useradd -m -U $NEWUSER -G wheel && passwd dan
+useradd -m -U $NEWUSER -G wheel && passwd $NEWUSER
 
 # Install pacaur
 su - $NEWUSER
