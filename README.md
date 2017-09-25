@@ -13,7 +13,7 @@ echo "/swapfile none swap defaults 0 0" >> /etc/fstab
 
 # Install base packages
 pacman -Syu --noconfirm base-devel tmux fish sudo bash-completion \
-                        iotop iftop \
+                        cronie iotop iftop \
                         vim sed git
 
 # Setup groups, add default user and add to the wheel group
